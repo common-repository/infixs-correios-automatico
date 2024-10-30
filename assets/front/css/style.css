@@ -1,0 +1,132 @@
+.caref-text-sm {
+  font-size: 0.9rem;
+}
+
+/** Calculator Form */
+
+#infixs-correios-automatico-calculator {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+#infixs-correios-automatico-calculator
+  .infixs-correios-automatico-calculator-title {
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+#infixs-correios-automatico-calculator input.infixs-correios-automatico-input {
+  max-width: 200px;
+  padding-left: 2.8rem;
+  padding-right: 2rem;
+}
+
+#infixs-correios-automatico-calculator
+  .infixs-correios-automatico-calculate-submit {
+  padding: 10px 20px;
+}
+
+#infixs-correios-automatico-calculator
+  .infixs-correios-automatico-calculate-box {
+  display: flex;
+  gap: 1rem;
+}
+
+#infixs-correios-automatico-calculator
+  .infixs-correios-automatico-calculate-find-link {
+  font-size: 0.79rem;
+}
+
+/** Calculator Results */
+.infixs-correios-automatico-shipping-results {
+  margin-top: 1rem;
+}
+
+.infixs-correios-automatico-shipping-results-grid > :nth-child(1),
+.infixs-correios-automatico-shipping-results-grid > :nth-child(2) {
+  border-bottom: 1px solid #0002;
+}
+
+.infixs-correios-automatico-shipping-results-grid > :nth-child(n + 3) {
+  padding-top: 0.3rem;
+}
+
+.infixs-correios-automatico-shipping-results-grid > :nth-child(odd) {
+  padding-right: 2rem;
+}
+
+.infixs-correios-automatico-shipping-results-grid {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+}
+
+.infixs-correios-automatico-shipping-results-time {
+  font-size: 0.85rem;
+  line-height: normal;
+}
+.infixs-correios-automatico-shipping-results-method {
+  font-weight: bold;
+}
+
+.infixs-correios-automatico-shipping-results-cost {
+  color: #046bd2;
+  font-weight: bold;
+}
+
+/** Button */
+
+.infixs-correios-automatico-input-text {
+  position: relative;
+}
+
+.infixs-correios-automatico-input-text.infixs-correios-automatico-invalid
+  .infixs-correios-automatico-input-text-prepend {
+  color: #ff0000;
+}
+
+.infixs-correios-automatico-input-text.infixs-correios-automatico-invalid
+  input.infixs-correios-automatico-input {
+  border-color: #ff0000;
+}
+
+.infixs-correios-automatico-input-text
+  .infixs-correios-automatico-input-text-prepend {
+  position: absolute;
+  left: 0.4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  line-height: normal;
+}
+
+.infixs-correios-automatico-input-text
+  .infixs-correios-automatico-input-text-append {
+  position: absolute;
+  right: 0.35rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #046bd2;
+  display: inline-flex;
+  line-height: normal;
+}
+
+.infixs-correios-automatico-input-text-append
+  .infixs-correios-automatico-loading {
+  display: none;
+}
+
+/** Animations */
+
+.infixs-correios-automatico-spin-animation {
+  animation: infixsCorreiosAutomaticoSpin 1s linear infinite;
+}
+
+@keyframes infixsCorreiosAutomaticoSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

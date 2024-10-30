@@ -1,0 +1,7 @@
+= 1.0.1 =
+
+* Arruma o calculo de frete na página do produto
+
+= 1.0.0 =
+
+* Versão inicial do plugin.
